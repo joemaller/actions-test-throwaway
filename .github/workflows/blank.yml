@@ -1,0 +1,20 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  issues:
+    types: [opened, edited, milestoned]
+    
+  workflow_dispatch:
+
+jobs:
+  task-collector:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Our Action
+        uses: ideasonpurpose/github-issues-asana-tasks-action@5eabd60060cdbceb85b888711d32e6f3e3422817
