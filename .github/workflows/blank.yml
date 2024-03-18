@@ -20,3 +20,5 @@ jobs:
 
       - name: Our Action
         uses: ideasonpurpose/github-issues-asana-tasks-action@v0.0.4
+        with:
+          ASANA_PAT: ${{ secrets.ASANA_TOKEN }}
