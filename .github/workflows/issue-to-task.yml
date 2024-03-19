@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Our Action
-        uses: ideasonpurpose/github-issues-asana-tasks-action
+        uses: ideasonpurpose/github-issues-asana-tasks-action@v0.0.17
         env:
           ASANA_PAT: ${{ secrets.ASANA_TOKEN }}
           TOKEN: ${{ secrets.ASANA_TOKEN }}
