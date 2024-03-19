@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Our Action
-        uses: ideasonpurpose/github-issues-asana-tasks-action@v0.0.12
+        uses: ideasonpurpose/github-issues-asana-tasks-action@v0.0.13
         env:
           ASANA_PAT: ${{ secrets.ASANA_TOKEN }}
           TOKEN: ${{ secrets.ASANA_TOKEN }}
