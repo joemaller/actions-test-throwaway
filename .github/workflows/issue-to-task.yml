@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Actions Exploration
+name: Issue To Task Action
 
 # Controls when the workflow will run
 on:
@@ -12,14 +12,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  task-collector:
+  issue-to-task:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
       - name: Our Action
-        uses: ideasonpurpose/github-issues-asana-tasks-action@v0.0.13
+        uses: ideasonpurpose/github-issues-asana-tasks-action@v0.0.14
         env:
           ASANA_PAT: ${{ secrets.ASANA_TOKEN }}
           TOKEN: ${{ secrets.ASANA_TOKEN }}
